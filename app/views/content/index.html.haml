@@ -1,2 +1,11 @@
-%h1 Content#index
-%p Find me in app/views/content/index.html.haml
+%h1 ML Content Picker
+.content
+  = image_tag @asset_path
+
+.ratings
+  .col-sm-6
+    %a{ "href": @good_url }
+      = mi.thumb_up
+  .col-sm-6
+    %a{ "href": @good_url }
+      = mi.thumb_down
