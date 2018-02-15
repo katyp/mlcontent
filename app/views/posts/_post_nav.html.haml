@@ -1,0 +1,13 @@
+.post-nav
+  .row.mt-3.mb-3
+    .col-2
+      - if @previous_post
+        %a{ "href": @previous_post }
+          <i class="material-icons">arrow_back</i>
+          %span.inline Previous
+    .offset-8
+    .col-2
+      - if @next_post
+        %a{ "href": @next_post }
+          %span.inline Next
+          <i class="material-icons">arrow_forward</i>

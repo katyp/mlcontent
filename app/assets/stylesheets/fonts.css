@@ -1,0 +1,77 @@
+/* Monospace */
+@font-face {
+    font-family: 'monospacebold';
+    src:url('/assets/monospacebold-webfont.woff2') format('woff2'),
+        url('/assets/monospacebold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monospacemedium';
+    src:url('/assets/monospace-webfont.woff2') format('woff2'),
+        url('/assets/monospace-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monospaceoblique';
+    src:url('/assets/monospaceoblique-webfont.woff2') format('woff2'),
+        url('/assets/monospaceoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monospacebold';
+    src: url('/assets/monospacebold-webfont.woff2') format('woff2'),
+         url('/assets/monospacebold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monospacemedium';
+    src: url('/assets/monospace-webfont.woff2') format('woff2'),
+         url('/assets/monospace-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monospaceoblique';
+    src: url('/assets/monospaceoblique-webfont.woff2') format('woff2'),
+         url('/assets/monospaceoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* SV Basic */
+@font-face {
+    font-family: 'sv_basic_manualbold';
+    src: url('/assets/svbasicmanual-bold-webfont.woff2') format('woff2'),
+         url('/assets/svbasicmanual-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sv_basic_manualbook';
+    src: url('/assets/svbasicmanual-webfont.woff2') format('woff2'),
+         url('/assets/svbasicmanual-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Raleway */
+@font-face {
+  font-family: 'raleway';
+  src:url('/assets/raleway_thin-webfont.eot');
+  src:url('/assets/raleway_thin-webfont.svg') format('svg'),
+      url('/assets/raleway_thin-webfont.ttf') format('truetype'),
+      url('/assets/raleway_thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
