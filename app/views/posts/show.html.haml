@@ -1,6 +1,8 @@
-= render 'post_nav'
+.post-show
+  = render 'post_nav'
 
-%h1= @post.title
-= @post.content.html_safe
+  .matchableHeight
+    %h1= @post.title
+    = @post.content.html_safe
 
-= render 'post_nav'
+  = render 'post_nav'

@@ -1,0 +1,9 @@
+%h2 Posts
+%ul
+  - for post in @posts
+    %li= link_to post.title, post_path(post)
+
+.d-none.d-md-block
+  %hr.m-5
+  .twitter
+    = render "twitter"

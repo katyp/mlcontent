@@ -6,21 +6,21 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'sidebar', async: true
   %body
     .container
       .row
         .header
           = image_tag "sophie-header.jpg"
       .row
-        .content.col-sm-9.order-2.order-sm-1
+        .navigation
+          = render "nav"
+      .row
+        .content.col-sm-7.col-md-8.order-2.order-sm-1
           = yield
+        .sidebar.col-sm-5.col-md-4.order-1.order-sm-1.m-2.m-sm-0
+          = render "sidebar"
 
-        -# This should be a template
-        .sidebar.col-sm-3.order-1.order-sm-1.m-2.m-sm-0
-          %h2 Sidebar
-          %ul
-            %li Item 1
-            %li Item 2
-            %li Item 3
-            %li Item 4
-            %li Item 5
+      .row
+        .footer.text-center
+          Content copyright Kathryn Pedelty 2018

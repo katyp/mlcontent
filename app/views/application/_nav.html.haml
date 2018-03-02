@@ -1,0 +1,21 @@
+%nav.navbar.navbar-expand-lg.navbar-light.bg-white
+
+  %button.navbar-toggler{ "type": "button", "data-toggle": "collapse", "data-target": "#navbarSupportedContent", "aria-controls": "navbarSupportedContent", "aria-expanded": false, "aria-label": "Toggle navigation"}
+    %span.navbar-toggler-icon
+
+  .collapse.navbar-collapse#navbarSupportedContent
+    %ul.navbar-nav.mr-auto
+      %li.nav-item.active
+        %a.nav-link{ "href": pages_index_path }
+          Home
+          %span.sr-only
+            (current)
+      %li.nav-item
+        %a.nav-link{ "href": post_path({ id: 1 }) }
+          Posts
+      %li.nav-item
+        = link_to "Contact", pages_contact_path, class: "nav-link"
+      %li.nav-item.float-right
+        %a.nav-link.float-right{ href: "https://gingerspetrescue.org", target: "_blank" }
+          Visit Ginger's Pet Rescue
+          %i.material-icons open_in_new
