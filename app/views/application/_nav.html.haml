@@ -5,15 +5,15 @@
 
   .collapse.navbar-collapse#navbarSupportedContent
     %ul.navbar-nav.mr-auto
-      %li.nav-item.active
+      %li#home-nav.nav-item
         %a.nav-link{ "href": pages_index_path }
           Home
           %span.sr-only
             (current)
-      %li.nav-item
-        %a.nav-link{ "href": post_path({ id: 1 }) }
+      %li#posts-nav.nav-item
+        %a.nav-link{ "href": post_path(@first_post) }
           Posts
-      %li.nav-item
+      %li#contact-nav.nav-item
         = link_to "Contact", pages_contact_path, class: "nav-link"
       %li.nav-item.float-right
         %a.nav-link.float-right{ href: "https://gingerspetrescue.org", target: "_blank" }

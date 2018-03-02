@@ -5,5 +5,6 @@ class ApplicationController < ActionController::Base
 
   def populate_posts
     @posts = Post.all
+    @first_post = Post.first
   end
 end
