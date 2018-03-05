@@ -1,9 +1,14 @@
-$font-family: raleway
+@import 'functions'
+
+$font-family: "Tribun ADF Std"
+$font-size-base: prem(19px)
+
 
 // Colors
 $body-color: #1d2d47
 $secondary-color: lighten($body-color, 30%)
 $red: #471d2d
+$tertiary-color: lighten($red, 30%)
 $green: #2d471d
 
 // Headers
@@ -11,8 +16,9 @@ $h1-font-size: 30px
 
 // Navbar
 $navbar-light-color: $body-color
-$navbar-light-hover-color: yellow
-$navbar-light-active-color: red
+$navbar-light-hover-color: $secondary-color
+$navbar-light-active-color: $tertiary-color
+$navbar-padding-x: 0
 
 // Headings
 $headings-margin-bottom: 1em
@@ -21,4 +27,3 @@ $headings-font-family: $font-family
 // Font
 $font-family-monospace: $font-family
 $font-family-base: $font-family-monospace
-$font-weight-base: bold

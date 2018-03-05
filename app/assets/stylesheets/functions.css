@@ -1,0 +1,9 @@
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+// prem stands for  px to rem.
+@function prem($pxval, $base: 16) {
+    @return strip-unit($pxval) / $base * 1rem;
+}
+

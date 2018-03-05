@@ -17,7 +17,8 @@
           = render "nav"
       .row
         .content.col-sm-7.col-md-8.order-2.order-sm-1
-          = yield
+          #matchable-height
+            = yield
         .sidebar.col-sm-5.col-md-4.order-1.order-sm-1.m-2.m-sm-0
           = render "sidebar"
 
