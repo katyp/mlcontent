@@ -5,5 +5,9 @@
   .matchableHeight
     %h1= @post.title
     = @post.content.html_safe
+    .small
+      Posted
+      = time_ago_in_words @post.posted_date
+      ago
 
   = render 'post_nav'
