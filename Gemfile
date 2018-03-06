@@ -25,6 +25,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'redcarpet'
+gem 'showdown-rails'
 gem 'sprockets-rails'
 gem 'material_icons'
 gem 'bootstrap', '~> 4.0.0'

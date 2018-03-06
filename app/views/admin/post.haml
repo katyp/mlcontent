@@ -1,0 +1,13 @@
+%h2 Admin posts
+
+- style = "width: 320px; height: 500px; display: inline-block"
+
+.form{ style: "display: inline-block" }
+  = form_for @post, url: {action: "update_post"} do |p|
+    .title= p.text_field :title
+    .foo= p.text_area :content, id: "post_content", style: style
+    .submit= p.submit "update_post"
+
+#admin-preview{ style: style }
+
+%button#button button

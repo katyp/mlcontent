@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'pages/about'
 
   resources :posts, only: [:show]
+
+  get 'admin/post/:id', to: 'admin#post'
+  post 'admin/update_post'
 end
