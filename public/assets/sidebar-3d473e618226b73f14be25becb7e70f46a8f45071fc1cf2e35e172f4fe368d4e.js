@@ -1,0 +1,1 @@
+(function(){var t;t=function(){return console.log("setting height"),$(".sidebar").height($("#matchable-height").height())},document.addEventListener("turbolinks:load",t),$(window).on("load",function(){return t()})}).call(this);
